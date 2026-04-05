@@ -1,0 +1,8 @@
+//! This module contains all the API version routers.
+
+mod v1;
+
+/// Creates a new router with all the API routes.
+pub(super) fn new() -> axum::Router {
+    axum::Router::new().nest("/v1", v1::new())
+}
