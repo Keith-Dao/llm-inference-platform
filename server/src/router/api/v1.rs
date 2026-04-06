@@ -3,5 +3,5 @@
 /// Creates a new router with V1 routes.
 pub(super) fn new() -> axum::Router {
     // TODO: Implement inference endpoint
-    axum::Router::new().route("/info", axum::routing::get(|| async { "API V1" }))
+    axum::Router::new()
 }
