@@ -7,7 +7,10 @@ authors = [
     { name = "Keith Dao", email = "keith.dao.248@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "optimum-onnx>=0.1.0",
+    "transformers>=4.57.6",
+]
 
 [project.scripts]
 model = "model:main"
